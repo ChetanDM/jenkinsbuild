@@ -7,14 +7,15 @@ pipeline {
             }
         }
     }
-}
-pipeline {
-    agent any
+  agent any
     stages {
         stage('build') {
             steps {
-                echo 'build done'
+                echo ' World'
             }
         }
     }
 }
+
+
+
