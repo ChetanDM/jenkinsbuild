@@ -1,21 +1,10 @@
 pipeline {
-    agent any
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-    }
-  agent any
+    agent 
     stages {
         stage('build') {
             steps {
-                echo ' World'
+                sh 'python --version'
             }
         }
     }
 }
-
-
-
